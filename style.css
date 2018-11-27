@@ -14,9 +14,8 @@ header {
 }
 
 .logo img {
-    width:14em;
+    width:10em;
     padding-top: 1em;
-    padding-left: 4em;
 }
 
 main {
@@ -24,39 +23,44 @@ main {
 }
 
 .container {
-    max-width: 1440px;
     margin: 0 auto;
-}
-h1 {
-    font-family: 'Poppins';
-    font-size: 3em;
-    text-align: center;
     padding: 0.5em;
 }
 
+h1 {
+    font-family: 'Poppins';
+    text-align: center;
+   
+}
+
 p {
-    font-size: 1.5em;
+    font-size: 1em;
     color: hsl(208, 11%, 55%);
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 1em  auto;
 }
 
 .image-mock {
     display: block;
-    margin: 5em auto;
+    margin: 3em auto;
+    width: 100%;
 }
 
-.subcribe {
-    margin: 10em;
+
+#enroll {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top:5em;
+    margin-bottom: 1em;
 }
 
 form {
     text-align: center;
+    
 }
 
 input[type=email] {
-    width: 350px;
+    width: 90%;
     padding: 15px 20px;
     margin: 8px 0;
     border: 1px solid hsl(208, 11%, 55%);
@@ -72,67 +76,156 @@ button {
     font-size: 16px;
     color: white;
     border-radius: 6px;
+    width: 90%;
 }
-
 
 footer {
     background-color: hsl(192, 100%, 9%);
-    padding: 1em;
+    margin-top: 8em;
+    padding-top: 3em;
+    padding-left: 2em;
+}
+
+.fab {
+    font-size: 45px;
+    color: #fff;
+    margin-top: 0.5em;
+    padding: 0.2em;
 }
 
 .f-menu {
     display: flex;
-    color: #fff;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 50px 25px 30px 25px;
+    margin-bottom: 3em;
+    
 }
 
-.svg-logo {
-   padding: 50px;
-  }
-
-.f-menu li:nth-child(1) {
-    margin-right: auto;
-  }
-
-.f-menu li:last-child {
-      margin-right: 100px;
-  }
-
-.f-menu li {
-      margin-right: 50px;
-      
-  }
-
-.bottom-footer {
-      margin-bottom: 3em;
-  }
-
-.fab {
-    font-size: 50px;
-    color: #fff;
-}
 .social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-media li:nth-last-child(1) {
-    margin-left: auto;
-    padding-right: 8em;
     color: #fff;
-    font-size: 14px;;
-}
-
-.social-media li:first-child {
-    margin-left: 5em;
+    margin-top: 2em;
+    padding-bottom: 5em;
 }
 
 .social-media li {
-    padding: 0.7em;
+    padding-top: 1em;
 }
 
 
 
+
+/* ***************media query***************** */
+
+
+@media only screen and (min-width: 1200px) {
+
+    header {
+        padding: 1em;
+        margin-bottom: 5em;
+    }
+    
+    .logo img {
+        width:14em;
+        padding-top: 1em;
+        padding-left: 4em;
+    }
+
+    main {
+        margin-top: 8em;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-family: 'Poppins';
+        font-size: 3em;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    p {
+        font-size: 1.5em;
+        color: hsl(208, 11%, 55%);
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .image-mock {
+        display: block;
+        margin: 3em auto;
+        width: 80%;
+    }
+    
+    form {
+        text-align: center;
+    }
+    
+    input[type=email] {
+        width: 350px;
+        padding: 15px 20px;
+        margin: 8px 0;
+        border: 1px solid hsl(208, 11%, 55%);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    button {
+        background: hsl(322, 100%, 66%);
+        border: none;
+        padding: 15px 60px;
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        border-radius: 6px;
+        width: 200px;
+        box-shadow: 3px 5px 20px #eee, 0 4px 4px #d5d5d5;
+    }
+
+    footer {
+        margin-top: 8em;
+    }
+
+    .inner-footer {
+        padding: 8em;
+    }
+
+    .f-section {
+        display: inline-block;
+    }
+
+    .bottom-footer {
+        float: right;
+    }
+
+    .g-section {
+        margin-top: 2em;
+    }
+
+    .social-media {
+        display: flex;
+        margin-top: 0;
+        
+    }
+
+    .social-media li {
+        margin-left: 3em;
+        padding-top: 0;
+    }
+
+
+    .bottom-text {
+        color: hsl(208, 11%, 55%);
+        text-align: right;
+        font-size: 1em;
+        margin-right: 0px;
+        margin-top: -100px;
+    
+    }
+
+    .fem {
+        background-color: hsl(192, 100%, 9%);
+    }
+}
